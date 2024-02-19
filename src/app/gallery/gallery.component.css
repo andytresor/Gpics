@@ -1,0 +1,42 @@
+.body {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pic {
+    display: flex;
+    flex-direction: row;
+    padding: 35px 80px;
+    width: 150px;  
+    transition: transform 0.2s;
+}
+
+.pic img {
+    width: 260px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.pic img:hover {
+    transform: scale(1.1);
+}
+
+.desc {
+    display: flex;
+    flex-direction: row;
+    width: 260px;
+    justify-content: space-around;
+    position: absolute;
+}
+
+.desc img {
+    width: 50px;
+    border-radius: 50%;
+}

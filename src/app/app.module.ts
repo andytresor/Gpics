@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { GalleryComponent } from './gallery/gallery.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     BrowserModule,
     AppRoutingModule,
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

@@ -1,5 +1,20 @@
 <app-navbar></app-navbar>
 
+<div class="searchbar">
+    <form action="" #searchbar="ngForm" (ngSubmit)="search()">
+      <label for="search">Search for stuff</label>
+      <input
+        id="search"
+        type="search"
+        placeholder="Search..."
+        autofocus
+        required
+        [(ngModule)]="searching"
+      />
+      <button type="submit" (click)="searchImages(searching)">Go</button>
+    </form>
+  </div>
+
 <app-gallery></app-gallery>
 
 <router-outlet></router-outlet>

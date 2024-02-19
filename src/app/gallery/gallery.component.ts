@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../api.service';
+import { PixabayService } from '../services/pixabay.service';
 
 @Component({
   selector: 'app-gallery',
@@ -10,11 +10,11 @@ export class GalleryComponent implements OnInit{
 
   pics: any;
   constructor(
-    private apiService: ApiService
+    private pixabayService: PixabayService
   ) {}
 
   ngOnInit() {
-    this.apiService.getPics().subscribe((data) => {
+    this.pixabayService.getPics().subscribe((data) => {
       this.pics= data;
       console.log(this.pics);
       
