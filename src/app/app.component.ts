@@ -10,18 +10,16 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
   title = 'Gpics';
-  searching: any;
+  input_field: any;
   
   constructor (
     private pixabayService: PixabayService
   ) {}
 
   searchImages(query: string) {
-    this.pixabayService.searchImages(query).subscribe((data: any) => {
-      console.log(data);
-      
+    this.pixabayService.search_Images(query).subscribe((data: any) => {
+      this.input_field=data
+      console.log(this.input_field);
     })
   }
-
-  search(){}
 }

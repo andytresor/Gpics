@@ -1,53 +1,53 @@
 <div class="body">
     <div class="gallery">
-        <div class="pic">
-            <img src='/assets/images/1624_U1RVRElPIEtBVCAzNTctMDQ.jpg' alt="Image 1">
+        <div class="pic" *ngFor="let pictures of pics.hits">
+            <img src='{{pictures.largeImageURL}}' alt="Image 1">
             <div class="desc">
-                <img src="/assets/images/2238370_1633.jpg" alt="">
-                <p>hello andy</p>
+                <img src="{{pictures.userImageURL}}" alt="">
+                <p>{{pictures.user}}</p>
             </div>
         </div>
-        <div class="pic">
+        <!-- <div class="pic">
             <img src='/assets/images/pink-sweater-front.jpg' alt="Image 1">
             <div class="desc">
-                <img src="" alt="">
-                <p></p>
+                <img src="/assets/images/2238370_1633.jpg" alt="">
+                <p>yjtjtyjtyjty</p>
             </div>
         </div>
         <div class="pic">
             <img src='/assets/images/2238370_1633.jpg' alt="Image 1">
             <div class="desc">
-                <img src="" alt="">
+                <img src="/assets/images/2238370_1633.jpg" alt="">
                 <p></p>
             </div>
         </div>
         <div class="pic">
             <img src='/assets/images/7251225_31213.jpg' alt="Image 1">
             <div class="desc">
-                <img src="" alt="">
+                <img src="/assets/images/2238370_1633.jpg" alt="">
                 <p></p>
             </div>
         </div>
         <div class="pic">
             <img src='/assets/images/delivery-concept-handsome-african-american-delivery-man-isolated-grey-studio-background-copy-space.jpg' alt="Image 1">
             <div class="desc">
-                <img src="" alt="">
-                <p></p>
+                <img src="/assets/images/2238370_1633.jpg" alt="">
+                <p>jevkgkgg</p>
             </div>
         </div>
         <div class="pic">
             <img src='/assets/images/orsrc78486.jpg' alt="Image 1">
             <div class="desc">
-                <img src="" alt="">
+                <img src="/assets/images/2238370_1633.jpg" alt="">
                 <p></p>
             </div>
         </div>
         <div class="pic">
             <img src='/assets/images/pair-trainers.jpg' alt="Image 1">
             <div class="desc">
-                <img src="" alt="">
+                <img src="/assets/images/2238370_1633.jpg" alt="">
                 <p></p>
             </div>
-        </div>
+        </div> -->
       </div>
 </div>

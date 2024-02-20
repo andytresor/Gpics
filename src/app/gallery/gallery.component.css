@@ -1,27 +1,36 @@
 .body {
     display: flex;
     justify-content: center;
-    width: 95%;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.588);
+    background-blend-mode: multiply;
+    font-family: "Poppins", sans-serif;
+    
 }
 .gallery {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 95%;
+    
 }
 
 .pic {
     display: flex;
     flex-direction: row;
     padding: 35px 80px;
-    width: 150px;  
+    width: 130px;  
     transition: transform 0.2s;
 }
 
 .pic img {
-    width: 260px;
+    width: 250px;
     border-radius: 15px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 
 .pic img:hover {
@@ -31,12 +40,23 @@
 .desc {
     display: flex;
     flex-direction: row;
-    width: 260px;
+    width: 240px;
+    height: fit-content;
     justify-content: space-around;
     position: absolute;
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(0.8px);
+    border-radius: 10px;
+    
 }
 
 .desc img {
     width: 50px;
     border-radius: 50%;
+}
+
+.desc p {
+    color: white;
+    font-size: 15px;
 }

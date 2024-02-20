@@ -16,8 +16,7 @@ export class GalleryComponent implements OnInit{
   ngOnInit() {
     this.pixabayService.getPics().subscribe((data) => {
       this.pics= data;
-      console.log(this.pics);
-      
+      console.log(this.pics);  
     });
   }
 }

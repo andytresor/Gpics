@@ -1,20 +1,53 @@
-<app-navbar></app-navbar>
-
-<div class="searchbar">
-    <form action="" #searchbar="ngForm" (ngSubmit)="search()">
+<body>
+  
+<div class="header">
+  <app-navbar></app-navbar>
+  <div class="welcome-txt">
+    <h1>
+      <span>w</span>
+      <span>e</span>
+      <span>l</span>
+      <span>c</span>
+      <span>o</span>
+      <span>m</span>
+      <span>e </span>
+      <span>to </span>
+      <span>g</span>
+      <span>p</span>
+      <span>i</span>
+      <span>c</span>
+      <span>s</span>
+    </h1>
+    <h3><p>Over millions of pictures available</p></h3>
+  </div>
+  <div class="searchbar">
+    <form action="">
       <label for="search">Search for stuff</label>
       <input
         id="search"
         type="search"
+        name="searchbar"
         placeholder="Search..."
         autofocus
         required
-        [(ngModule)]="searching"
+        [(ngModel)]="input_field"
       />
-      <button type="submit" (click)="searchImages(searching)">Go</button>
+      <button type="submit" (click)="searchImages(input_field)">Go</button>
     </form>
   </div>
+
+
+</div>
+
+<!-- <div class="pic" *ngFor="let pictures of input_field.hits">
+  <img src='{{pictures.largeImageURL}}' alt="Image 1">
+  <div class="desc">
+      <img src="{{pictures.userImageURL}}" alt="">
+      <p>{{pictures.user}}</p>
+  </div>
+</div> -->
 
 <app-gallery></app-gallery>
 
 <router-outlet></router-outlet>
+</body>

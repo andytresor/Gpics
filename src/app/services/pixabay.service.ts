@@ -15,8 +15,8 @@ export class PixabayService {
     return this.httpClient.get(this.apiUrl);
   }
 
-  searchImages (query: string) {
-    const url = this.apiUrl + `&q=${query}`
+  search_Images (query: string) {
+    const url = this.apiUrl + `&q=` + `${query}`;
     return this.httpClient.get(url);
   }
 }
