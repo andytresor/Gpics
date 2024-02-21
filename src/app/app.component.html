@@ -35,8 +35,6 @@
       <button type="submit" (click)="searchImages(input_field)">Go</button>
     </form>
   </div>
-
-
 </div>
 
 <!-- <div class="pic" *ngFor="let pictures of input_field.hits">
@@ -48,6 +46,8 @@
 </div> -->
 
 <app-gallery></app-gallery>
+
+<app-search-result [data]="input_field"></app-search-result>
 
 <router-outlet></router-outlet>
 </body>

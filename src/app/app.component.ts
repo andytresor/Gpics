@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { PixabayService } from './services/pixabay.service';
-import { FormsModule } from '@angular/forms';
+import { Router } from 'express';
 
 
 @Component({
@@ -13,13 +13,15 @@ export class AppComponent {
   input_field: any;
   
   constructor (
-    private pixabayService: PixabayService
+    private pixabayService: PixabayService,
+    
   ) {}
 
   searchImages(query: string) {
     this.pixabayService.search_Images(query).subscribe((data: any) => {
       this.input_field=data
       console.log(this.input_field);
+      // (<any>this.router).navigate(['/search_result']);
     })
   }
 }

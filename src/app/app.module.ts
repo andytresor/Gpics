@@ -8,12 +8,14 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FormsModule } from '@angular/forms';
+import { SearchResultComponent } from './search-result/search-result.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    GalleryComponent
+    GalleryComponent,
+    SearchResultComponent
   ],
   imports: [
     BrowserModule,
