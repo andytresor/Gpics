@@ -1,6 +1,15 @@
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/assets/images/background_1.jpg");
     background-color: rgba(0, 0, 0, 0.588);
     background-blend-mode: multiply;
 }
