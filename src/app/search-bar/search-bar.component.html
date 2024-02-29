@@ -1,0 +1,15 @@
+<div class="searchbar">
+    <form action="">
+        <label for="search">Search for stuff</label>
+        <input
+          id="search"
+          type="search"
+          name="searchbar"
+          placeholder="Search..."
+          autofocus
+          required
+          [(ngModel)]="input_field"
+        />
+        <button type="submit" (click)="searchImages(input_field)" >Go</button>
+      </form>
+</div>

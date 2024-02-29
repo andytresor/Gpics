@@ -1,0 +1,52 @@
+.main {
+    margin: 0;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/assets/images/background_1.jpg");
+    background-color: rgba(0, 0, 0, 0.588);
+    background-blend-mode: multiply;
+    min-height: 400px;
+    /* text-align: center;  */
+}
+app-gallery{
+    z-index: 999!important;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: transparent;
+    text-align: center;
+    
+}
+
+h1 span {
+    -webkit-text-stroke: 1px white;
+    padding: 5px;   
+}
+
+h1 span:has(~span:hover) {
+    color: white;
+}
+
+h1 span:hover {
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: -10px;
+    color: wheat;
+    opacity: 2px;
+}
+.searchbar {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 35px;
+}

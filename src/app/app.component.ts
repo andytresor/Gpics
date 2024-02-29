@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { PixabayService } from './services/pixabay.service';
-import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,16 +10,24 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
   title = 'Gpics';
-  input_field: any;
+  // input_field: any;
   
-  constructor (
-    private pixabayService: PixabayService
-  ) {}
+  // constructor (
+  //   private pixabayService: PixabayService,
+  //   private router: Router
+  // ) {}
 
-  searchImages(query: string) {
-    this.pixabayService.search_Images(query).subscribe((data: any) => {
-      this.input_field=data
-      console.log(this.input_field);
-    })
-  }
+  // searchImages(query: string) {
+
+  //   this.router.navigate(['/search_result'], { 
+  //     queryParams: { 'search': query }
+  //    });
+  //   // this.pixabayService.search_Images(query).subscribe((data: any) => {
+  //   //   this.input_field=data
+  //   //   console.log(this.input_field);
+  //   //    this.router.navigate(['/search_result'], { 
+  //   //     queryParams: { 'search': query }
+  //   //    });
+  //   // })
+  // }
 }

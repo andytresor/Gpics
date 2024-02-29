@@ -1,0 +1,19 @@
+<div class="body">
+    <h1>search Result</h1>
+    <div class="gallery">
+        <div class="pic" *ngFor="let pictures of param">
+            <img src='{{pictures.largeImageURL}}' alt="Image 1">
+            <div class="desc">
+                <img src="{{pictures.userImageURL}}" alt="">
+                <p>{{pictures.user}}</p>
+            </div>
+        </div>
+         <!-- <div class="pic">
+            <img src='/assets/images/pink-sweater-front.jpg' alt="Image 1" width="150px">
+            <div class="desc">
+                <img src="/assets/images/2238370_1633.jpg" alt="" width="50px">
+                <p>yjtjtyjtyjty</p>
+            </div>
+        </div> -->
+    </div>
+</div>
